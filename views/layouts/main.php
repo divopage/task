@@ -25,7 +25,7 @@ echo Nav::widget([
     'options' => ['class' => 'navbar-nav navbar-right'],
     'activateParents' => true,
     'items' => array_filter([
-        ! Yii::$app->user->isGuest ?
+        ! Yii::$app->user->isGuest && ! Yii::$app->user->can(AdminRbac::PERMISSION_ADMIN_PANEL) ?
             ['label' =>'My Task', 'url' => ['/task/default/index']] :
             false,
         Yii::$app->user->isGuest ?

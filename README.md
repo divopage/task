@@ -38,3 +38,35 @@ Assign `admin` role to your user:
 ~~~
 php yii roles/assign
 ~~~
+
+
+RESTful api:
+
+
+~~~
+http://programcenter/api/task
+http://programcenter/api/task?user_id=3
+http://programcenter/api/user
+~~~
+
+Passwords:
+
+
+~~~
+admin
+логин: admin
+пароль: 123456
+
+
+user_1
+логин: user_1
+пароль: 123456
+
+
+user_2
+логин: user_2
+пароль: 123456
+~~~
+
+
+
